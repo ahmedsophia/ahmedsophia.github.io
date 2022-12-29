@@ -1,310 +1,362 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Sophia Ahmed</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-</style>
+  <title>Sophia Ahmed</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Tangerine"
+    }
+
+    body {
+      font-family: "Open Sans"
+    }
+  </style>
 </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
-    <p class="w3-text-grey">Template by W3.CSS</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</nav>
+<body class="w3-light-grey">
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+  <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="content" style="max-width:1600px">
+    <!-- Image header -->
+    <div class="banner-wrap">
+      <div class="banner-wrapper">
+        <div class="banner"></div>
+        <h1 class="sophiaText">Sophia Ahmed</h1>
+      </div>
     </div>
+    <div class="leadpic">
+      <img class="w3-image" src="SophiBroumov.jpg" alt="Sophia with piano" width="1600" height="1060"> 
     </div>
-  </header>
   
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <!-- Grid -->
+    <div class="w3-row w3-padding w3-border">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div class="w3-center">
+            <h3>My Story</h3>
+          </div>
+
+          <div class="w3-justify">
+            <p>As a little child I was always fascinated by the old brown piano that we 
+              inherited from my great grandmother in Prague. I found the courage to 
+              open it one day and lay my fingers on the black and white keyboard. 
+              Every time I hit a key I could see dust coming out through the gaps.
+               I thought that it must have been a very long time since someone has last 
+               played that piano. I practiced for hours until late night when I finally 
+               learned to play my first song, the famous Für Elise from Ludwig van Beethoven. 
+               It was nowhere near to perfect and some notes might have been incorrect but to
+                my ears it was a wonderful discovery.</p>
+              <p>My first chords and simple songs grew quickly into etudes and some of the most
+                 beautiful pieces from famous classical composers. At that time, it seemed to
+                  me like talent and hours of endless practice were the main factor of success.
+                   Today, I believe that it was my piano teacher who played the most important 
+                   role in this journey. When I first met her, she was very young and at the 
+                   beginning of her teaching career. Her knowledge and passion for piano and 
+                   classical music was very inspiring to me. More importantly, it was her personality 
+                   and respect that she had for me. I was able to quickly build a strong bond and 
+                   connection with her through the dedication we shared. I worked very hard on bringing 
+                   my play to perfection and soon found the strength and courage to step into the world of competitions.</p>
+              <p>For every competition I had a routine. In preparation, I would always spend many hours 
+                planning and mastering all the details and beautiful nuances my repertoire could offer. I became 
+                determined to give the best performance and to win. I remember my first competition and all the 
+                feelings of excitement, joy, panic, and fear overwhelming me at the same time. I would never forget 
+                the moment when the judges called out my name for the first prize. It was very rewarding for me and 
+                motivated me to attend other prestigious competitions. Although I was a winner many times again, 
+                it was rather an honor to be able to play in some of the most beautiful music halls on some of 
+                the best grand pianos in the world.</p>
+              <p>Over the years I learned the techniques to bring out the best sound from an instrument and learned 
+                that each piano is in the hands of the player. It was up to me to bring out the best qualities even 
+                if it was not the most fabulous piano. I learned to express and convey my emotions through the 
+                music creating an incredible experience for both me, as well as the audience. Playing an 
+                instrument has helped me improve in many different ways. It enhanced my ability to stay focused 
+                and concentrated. I have learned to listen patiently and practice with endurance. But most 
+                importantly it is the happiness that it gives me and everyone around.</p>
+              <p>Last year I had the opportunity to give back what I have been given. I was approached 
+                by a family to teach their young daughter. It was my first real job and teaching 
+                experience where I could test not only my own skill and ability to pass knowledge 
+                to others but help motivate another little girl to get into the wonderful world of music.</p>
+            <p class="w3-clear"></p> 
+            <img src="kid.jpg" alt="Little Sophi" style="width:100%" class="img2">
+          </div>
+        </div>
+        <hr>
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div class="w3-center">
+            <h3>My Achievements</h3>
+          </div>
+
+          <div class="w3-justify">
+            <img src="Sophi.JPG" alt="Sophi and Jitka at piano" style="width:100%" class="w3-padding-16">
+            <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+              convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac
+              accumsan tortor cursus at. Phasellus sed ultricies
+              mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta
+              lectus vitae, ultricies congue gravida diam non fringilla.</p> 
+          </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div class="w3-center">
+            <h3></h3>
+            <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
+          </div>
+
+          <div class="w3-justify">
+            <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+            <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+              convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac
+              accumsan tortor cursus at. Phasellus sed ultricies
+              mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta
+              lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i
+                    class="fa fa-thumbs-up"></i> Like</b></button></p>
+            <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span
+                  class="w3-tag w3-white">3</span></button></p>
+            <p class="w3-clear"></p>
+
+            <!-- Example of comment field -->
+            <div id="demo3" style="display:none">
+              <hr>
+              <div class="w3-row w3-margin-bottom">
+                <div class="w3-col l2 m3">
+                  <img src="/w3images/girl_mountain.jpg" style="width:90px;">
+                </div>
+                <div class="w3-col l10 m9">
+                  <h4>Jane <span class="w3-opacity w3-medium">April 10, 2015, 7:22 PM</span></h4>
+                  <p>That was a great runway show! Thanks for everything.</p>
+                </div>
+              </div>
+              <div class="w3-row w3-margin-bottom">
+                <div class="w3-col l2 m3">
+                  <img src="/w3images/boy.jpg" style="width:90px;">
+                </div>
+                <div class="w3-col l10 m9">
+                  <h4>John <span class="w3-opacity w3-medium">April 8, 2015, 10:32 PM</span></h4>
+                  <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+              </div>
+              <div class="w3-row w3-margin-bottom">
+                <div class="w3-col l2 m3">
+                  <img src="/w3images/girl_hood.jpg" style="width:90px;">
+                </div>
+                <div class="w3-col l10 m9">
+                  <h4>Anja <span class="w3-opacity w3-medium">April 7, 2015, 9:12 PM</span></h4>
+                  <p>Cant wait for the runway to start!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END BLOG ENTRIES -->
       </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+      <!-- About/Information menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-white w3-margin">
+          <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+          <div class="w3-container w3-black">
+            <h4>My Name</h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of
+              lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Posts -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Popular Posts</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Denim</span>
+              <br>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Sweaters</span>
+              <br>
+              <span>Praes tinci sed</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Workshop</span>
+              <br>
+              <span>Ultricies congue</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia"
+                style="width:50px">
+              <span class="w3-large">Trends</span>
+              <br>
+              <span>Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+
+        <!-- Advertising -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Advertise</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+              <span class="w3-display-middle">Your AD Here</span>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Tags -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Tags</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <p>
+              <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+            </p>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Inspiration -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Inspiration</h4>
+          </div>
+          <div class="w3-row-padding w3-white">
+            <div class="w3-col s6">
+              <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
+              <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
+            </div>
+            <div class="w3-col s6">
+              <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+              <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Follow Me</h4>
+          </div>
+          <div class="w3-container w3-xlarge w3-padding">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Subscribe -->
+        <div class="w3-white w3-margin">
+          <div class="w3-container w3-padding w3-black">
+            <h4>Subscribe</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+            <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'"
+                class="w3-button w3-block w3-red">Subscribe</button></p>
+          </div>
+        </div>
+
+        <!-- END About/Intro Menu -->
       </div>
+
+      <!-- END GRID -->
     </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+
+    <!-- END w3-content -->
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-
-  <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <hr>
-    
-    <h4>Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-    </div>
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
-    <hr>
-    
-    <h4>How much I charge</h4>
-    <!-- Pricing Tables -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">1GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="w3-third">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">Unlimited Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+  <!-- Subscribe Modal -->
+  <div id="subscribe" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content" style="padding:32px">
+      <div class="w3-container w3-white">
+        <i onclick="document.getElementById('subscribe').style.display='none'"
+          class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+        <h2 class="w3-wide">SUBSCRIBE</h2>
+        <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+        <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+          onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
       </div>
     </div>
-  </div>
-  
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="contact"><b>Contact Me</b></h4>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>email@email.com</p>
-      </div>
-      <div class="w3-third w3-teal">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Chicago, US</p>
-      </div>
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
-        <p>512312311</p>
-      </div>
-    </div>
-    <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-    </form>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li> 
-      </ul>
-    </div>
-
-    <div class="w3-third">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
-      </p>
-    </div>
-
-  </div>
+  <footer class="w3-container w3-dark-grey" style="padding:32px">
+    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
+        class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p>Source code <a href="https://github.com/ahmedsophia/ahmedsophia.github.io" target="_blank">Sophia's GitHub</a></p>
   </footer>
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
-<!-- End page content -->
-</div>
+  <script>
+    // Toggle between hiding and showing blog replies/comments
+    document.getElementById("myBtn").click();
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+    function likeFunction(x) {
+      x.style.fontWeight = "bold";
+      x.innerHTML = "✓ Liked";
+    }
+  </script>
 
 </body>
+
 </html>
