@@ -87,7 +87,6 @@ and is wrapped around the whole page content, except for the footer in this exam
                 to listen patiently and practice with endurance. But most importantly it is the 
                 happiness that it gives me and everyone around.</p> 
             <p class="w3-clear"></p> 
-            <img src="kid.jpg" alt="Little Sophi" style="width:100%" class="img2">
           </div>
         </div>
         <hr>
@@ -95,21 +94,85 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- Blog entry -->
         <div class="w3-container w3-white w3-margin w3-padding-large">
           <div class="w3-center">
-            <h3>My Achievements</h3>
+            <h3>My Performances</h3>
           </div>
 
-          <div class="w3-justify">
-            <img src="Sophi.JPG" alt="Sophi and Jitka at piano" style="width:100%" class="w3-padding-16">
-            <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
-              convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac
-              accumsan tortor cursus at. Phasellus sed ultricies
-              mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta
-              lectus vitae, ultricies congue gravida diam non fringilla.</p> 
+          <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/fGUsnD0y4YQ" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(2)"></iframe>
+              </div>
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/e3rhZy7xprQ" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(3)"></iframe>
+              </div>
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/1Qm6GXsZBrk" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(4)"></iframe>
+              </div>
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/CtuoaQjtahs" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(5)"></iframe>
+              </div>
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/Vzim2-AbCdA" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(6)"></iframe>
+              </div>
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="thumbnail1.png" style="width:100%" onclick="currentSlide(1)" alt="My first international competition in Brno, Czech Republic - AMADEUS 2015, part 1">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="thumbnail2.png" style="width:100%" onclick="currentSlide(2)" alt="My first international competition in Brno, Czech Republic - AMADEUS 2015, part 2">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="thumbnail3.png" style="width:100%" onclick="currentSlide(3)" alt="Prague Piano Competition 2017 - First prize winner, part 1">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="thumbnail4.png" style="width:100%" onclick="currentSlide(4)" alt="Prague Piano Competition 2017 - First prize winner, part 2">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="thumbnail5.png" style="width:100%" onclick="currentSlide(5)" alt="Young Piano Of The Prague Conservatoire - International competition of piano laureates">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="thumbnail6.png" style="width:100%" onclick="currentSlide(6)" alt="Winners' Concert of Prague Junior Note 2017">
+              </div>
+            </div>
           </div>
-          <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen></iframe>
-          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+          </script>
+
         </div>
 
         <!-- Blog entry -->
