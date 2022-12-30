@@ -1,2 +1,2 @@
-# Sophia Ahmed Resume
+# Sophia's website
 https://ahmedsophia.github.io/

@@ -5,8 +5,10 @@
   <title>Sophia Ahmed</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="app.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Petit Formal Script">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -16,7 +18,8 @@
     h4,
     h5,
     h6 {
-      font-family: "Tangerine"
+      font-family: "Abril+Fatface|Roboto:300,70";
+      font-weight:normal;
     }
 
     body {
@@ -33,11 +36,11 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Image header -->
     <div class="banner-wrap">
       <div class="banner-wrapper">
-        <div class="banner"></div>
+        <div class="banner" id="banner"></div>
         <h1 class="sophiaText">Sophia Ahmed</h1>
       </div>
     </div>
-    <div class="leadpic">
+    <div class="leadpic" id="leadimg">
       <img class="w3-image" src="SophiBroumov.jpg" alt="Sophia with piano" width="1600" height="1060"> 
     </div>
   
@@ -54,44 +57,35 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
 
           <div class="w3-justify">
-            <p>As a little child I was always fascinated by the old brown piano that we 
-              inherited from my great grandmother in Prague. I found the courage to 
-              open it one day and lay my fingers on the black and white keyboard. 
-              Every time I hit a key I could see dust coming out through the gaps.
-               I thought that it must have been a very long time since someone has last 
-               played that piano. I practiced for hours until late night when I finally 
-               learned to play my first song, the famous Für Elise from Ludwig van Beethoven. 
-               It was nowhere near to perfect and some notes might have been incorrect but to
-                my ears it was a wonderful discovery.</p>
-              <p>My first chords and simple songs grew quickly into etudes and some of the most
-                 beautiful pieces from famous classical composers. At that time, it seemed to
-                  me like talent and hours of endless practice were the main factor of success.
-                   Today, I believe that it was my piano teacher who played the most important 
-                   role in this journey. When I first met her, she was very young and at the 
-                   beginning of her teaching career. Her knowledge and passion for piano and 
-                   classical music was very inspiring to me. More importantly, it was her personality 
-                   and respect that she had for me. I was able to quickly build a strong bond and 
-                   connection with her through the dedication we shared. I worked very hard on bringing 
-                   my play to perfection and soon found the strength and courage to step into the world of competitions.</p>
-              <p>For every competition I had a routine. In preparation, I would always spend many hours 
-                planning and mastering all the details and beautiful nuances my repertoire could offer. I became 
-                determined to give the best performance and to win. I remember my first competition and all the 
-                feelings of excitement, joy, panic, and fear overwhelming me at the same time. I would never forget 
-                the moment when the judges called out my name for the first prize. It was very rewarding for me and 
-                motivated me to attend other prestigious competitions. Although I was a winner many times again, 
-                it was rather an honor to be able to play in some of the most beautiful music halls on some of 
-                the best grand pianos in the world.</p>
-              <p>Over the years I learned the techniques to bring out the best sound from an instrument and learned 
-                that each piano is in the hands of the player. It was up to me to bring out the best qualities even 
-                if it was not the most fabulous piano. I learned to express and convey my emotions through the 
-                music creating an incredible experience for both me, as well as the audience. Playing an 
-                instrument has helped me improve in many different ways. It enhanced my ability to stay focused 
-                and concentrated. I have learned to listen patiently and practice with endurance. But most 
-                importantly it is the happiness that it gives me and everyone around.</p>
-              <p>Last year I had the opportunity to give back what I have been given. I was approached 
-                by a family to teach their young daughter. It was my first real job and teaching 
-                experience where I could test not only my own skill and ability to pass knowledge 
-                to others but help motivate another little girl to get into the wonderful world of music.</p>
+            <p>As a little child I was always fascinated by an old brown piano 
+              that we inherited from my great grandmother in Prague. I found the 
+              courage to open it one day and lay my fingers on the black and white 
+              keyboard. I practiced for hours until late night when I finally learned 
+              to play my first song, the famous Für Elise from Ludwig van Beethoven. 
+              It was nowhere near to perfect and some notes might have been incorrect 
+              but to my ears it was a wonderful discovery. Since that day my passion 
+              and love for playing the piano has been only growing.</p>
+              <p>My first chords and simple songs grew quickly into etudes and some 
+                of the most beautiful pieces from famous classical composers. 
+                I worked very hard on bringing my play to perfection and soon found 
+                the strength and courage to step into the world of competitions.</p>
+              <p>For every competition I had a routine. In preparation, I would always 
+                spend many hours planning and mastering all the details and beautiful 
+                nuances my repertoire could offer. I became determined to give the best 
+                performance and to win. I remember my first competition and all the feelings 
+                of excitement, joy, panic, and fear overwhelming me at the same time. I would 
+                never forget the moment when the judges called out my name for the first prize. 
+                It was very rewarding for me and motivated me to attend other prestigious competitions. 
+                Although I was a winner many times again, it was rather an honor to be able to play in 
+                some of the most beautiful music halls on some of the best grand pianos in the world.</p>
+              <p>Over the years I learned the techniques to bring out the best sound from an instrument 
+                and learned that each piano is in the hands of the player. It was up to me to bring 
+                out the best qualities even if it was not the most fabulous piano. I learned to 
+                express and convey my emotions through the music creating an incredible experience 
+                for both me, as well as the audience. Playing an instrument has helped me improve 
+                in many ways. It enhanced my ability to stay focused and concentrated. I have learned 
+                to listen patiently and practice with endurance. But most importantly it is the 
+                happiness that it gives me and everyone around.</p> 
             <p class="w3-clear"></p> 
             <img src="kid.jpg" alt="Little Sophi" style="width:100%" class="img2">
           </div>
@@ -113,7 +107,9 @@ and is wrapped around the whole page content, except for the footer in this exam
               mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta
               lectus vitae, ultricies congue gravida diam non fringilla.</p> 
           </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen></iframe>
+          <div class="iframe-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
 
         <!-- Blog entry -->
