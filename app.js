@@ -4,15 +4,15 @@ function update() {
   const rect = elem.getBoundingClientRect();
   const wrap = container.getBoundingClientRect();
   var opac = 100;
-  if (86 > rect.bottom - wrap.top) {
-    opac = (rect.bottom - wrap.top) / 2.5 + 37;
+  if (60 > rect.bottom - wrap.top) {
+    opac = (rect.bottom - wrap.top) / 2.5 + 77;
     if (opac <= 70) {
       container.style.opacity = "70%";
     } else {
       container.style.opacity = opac.toString() + "%";
     }
   } else {
-    opac = (rect.bottom - wrap.top) / 2.5 + 37;
+    opac = (rect.bottom - wrap.top) / 2.5 + 77;
     if (opac >= 100) {
       container.style.opacity = "100%";
     } else {
