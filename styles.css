@@ -328,7 +328,7 @@ a {
 
 .banner-wrap{
     position:absolute;
-    top: calc(1em * 3);
+    top: calc(4vw);
     left: 0px;
     height: 100%;
     width: 100%;
