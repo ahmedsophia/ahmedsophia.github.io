@@ -26,6 +26,8 @@
       font-family: "Open Sans"
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="jquery-3.6.1.min.js"></script>
 </head>
 
 <body class="w3-light-grey">
@@ -34,15 +36,16 @@
 and is wrapped around the whole page content, except for the footer in this example -->
   <div class="content" style="max-width:1600px">
     <!-- Image header -->
-    <div class="banner-wrap">
-      <div class="banner-wrapper">
-        <div class="banner" id="banner"></div>
-        <h1 class="sophiaText">Sophia Ahmed</h1>
-      </div>
-    </div>
+    
     <div class="leadpic" id="leadimg">
-      <img class="w3-image" src="SophiBroumov.jpg" alt="Sophia with piano" width="1600" height="1060"> 
+      <img class="w3-image" src="pics/SophiBroumov.jpg" alt="Sophia with piano" width="1600" height="1060"> 
     </div>
+    <div style="width: 100%; height: 3vw;position: relative;"></div>
+    <div class="banner-wrapper">
+      <div class="banner" id="banner"></div>
+      <h1 class="sophiaText">Sophia Ahmed</h1>
+    </div>
+    <div class="filler" style="width: 100%;position: relative;"></div>
   
     <!-- Grid -->
     <div class="w3-row w3-padding w3-border">
@@ -99,73 +102,85 @@ and is wrapped around the whole page content, except for the footer in this exam
 
           <div class="container">
             <div class="mySlides">
-              <div class="numbertext">1 / 6</div>
+              <div class="numbertext">1 / 7</div>
               <div class="iframe-container">
-                <iframe class="vids" src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Xd5sDbbtqF4" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(1)"></iframe>
               </div>
             </div>
           
             <div class="mySlides">
-              <div class="numbertext">2 / 6</div>
+              <div class="numbertext">2 / 7</div>
               <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/fGUsnD0y4YQ" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(2)"></iframe>
               </div>
             </div>
           
             <div class="mySlides">
-              <div class="numbertext">3 / 6</div>
+              <div class="numbertext">3 / 7</div>
               <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/e3rhZy7xprQ" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(3)"></iframe>
               </div>
             </div>
               
             <div class="mySlides">
-              <div class="numbertext">4 / 6</div>
+              <div class="numbertext">4 / 7</div>
               <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/1Qm6GXsZBrk" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(4)"></iframe>
               </div>
             </div>
           
             <div class="mySlides">
-              <div class="numbertext">5 / 6</div>
+              <div class="numbertext">5 / 7</div>
               <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/CtuoaQjtahs" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(5)"></iframe>
               </div>
             </div>
-              
+
             <div class="mySlides">
-              <div class="numbertext">6 / 6</div>
+              <div class="numbertext">6 / 7</div>
               <div class="iframe-container">
-                <iframe src="https://www.youtube.com/embed/Vzim2-AbCdA" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(6)"></iframe>
+                <iframe src="https://www.youtube.com/embed/teiWq8QOhoQ" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(6)"></iframe>
               </div>
             </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">7 / 7</div>
+              <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/Vzim2-AbCdA" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide(7)"></iframe>
+              </div>
+            </div>
+            
               
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
           
             <div class="caption-container">
-              <p id="caption" font-size="calc(0.7vw + 0.6em)"></p>
+              <p id="caption" font-size="calc(0.5vw + 0.2em)"></p>
             </div>
           
             <div class="row">
               <div class="column">
-                <img class="demo cursor" src="thumbnail1.png" style="width:100%" onclick="currentSlide(1)" alt="My first international competition in Brno, Czech Republic - AMADEUS 2015, part 1">
+                <img class="demo cursor" src="pics/thumbnail1.png" style="width:100%" onclick="currentSlide(1)" alt="My first international competition in Brno, Czech Republic - AMADEUS 2015, part 1">
               </div>
               <div class="column">
-                <img class="demo cursor" src="thumbnail2.png" style="width:100%" onclick="currentSlide(2)" alt="My first international competition in Brno, Czech Republic - AMADEUS 2015, part 2">
+                <img class="demo cursor" src="pics/thumbnail2.png" style="width:100%" onclick="currentSlide(2)" alt="My first international competition in Brno, Czech Republic - AMADEUS 2015, part 2">
               </div>
               <div class="column">
-                <img class="demo cursor" src="thumbnail3.png" style="width:100%" onclick="currentSlide(3)" alt="Prague Piano Competition 2017 - First prize winner, part 1">
+                <img class="demo cursor" src="pics/thumbnail3.png" style="width:100%" onclick="currentSlide(3)" alt="Prague Piano Competition 2017 - First prize winner, part 1">
               </div>
               <div class="column">
-                <img class="demo cursor" src="thumbnail4.png" style="width:100%" onclick="currentSlide(4)" alt="Prague Piano Competition 2017 - First prize winner, part 2">
+                <img class="demo cursor" src="pics/thumbnail4.png" style="width:100%" onclick="currentSlide(4)" alt="Prague Piano Competition 2017 - First prize winner, part 2">
               </div>
               <div class="column">
-                <img class="demo cursor" src="thumbnail5.png" style="width:100%" onclick="currentSlide(5)" alt="Young Piano Of The Prague Conservatoire - International competition of piano laureates">
+                <img class="demo cursor" src="pics/thumbnail5.png" style="width:100%" onclick="currentSlide(5)" alt="Young Piano Of The Prague Conservatoire - International competition of piano laureates, part 1">
               </div>    
               <div class="column">
-                <img class="demo cursor" src="thumbnail6.png" style="width:100%" onclick="currentSlide(6)" alt="Winners' Concert of Prague Junior Note 2017">
+                <img class="demo cursor" src="pics/thumbnail7.png" style="width:100%" onclick="currentSlide(6)" alt="Young Piano Of The Prague Conservatoire - International competition of piano laureates, part 2">
               </div>
+              <div class="column">
+                <img class="demo cursor" src="pics/thumbnail6.png" style="width:100%" onclick="currentSlide(7)" alt="Winners' Concert of Prague Junior Note 2017">
+              </div>
+              
             </div>
           </div>
           <script>
@@ -174,6 +189,61 @@ and is wrapped around the whole page content, except for the footer in this exam
           </script>
 
         </div>
+        <hr>
+
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div class="w3-center">
+            <h3>My Practice Sessions</h3>
+          </div>
+
+          <div class="container">
+            <div class="mySlides1">
+              <div class="numbertext">1 / 3</div>
+              <div class="iframe-container">
+                <iframe class="vids" src="https://www.youtube.com/embed/kpscoFUXlXQ" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide1(1)"></iframe>
+              </div>
+            </div>
+            <div class="mySlides1">
+              <div class="numbertext">2 / 3</div>
+              <div class="iframe-container">
+                <iframe class="vids" src="https://www.youtube.com/embed/oMtKRU3WxHI" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide1(2)"></iframe>
+              </div>
+            </div>
+          
+            <div class="mySlides1">
+              <div class="numbertext">3 / 3</div>
+              <div class="iframe-container">
+                <iframe class="vids" src="https://www.youtube.com/embed/gWe1ybIeRZg" frameborder="0" allowfullscreen style="width:100%" onclick="currentSlide1(3)"></iframe>
+              </div>
+            </div> 
+             
+            <a class="prev" onclick="plusSlides1(-1)">❮</a>
+            <a class="next" onclick="plusSlides1(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption1" font-size="calc(0.5vw + 0.2em)"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column1">
+                <img class="demo1 cursor" src="pics/thumbnail10.png" style="width:100%" onclick="currentSlide1(1)" alt="Excerpts from practice sessions">
+              </div>
+              <div class="column1">
+                <img class="demo1 cursor" src="pics/thumbnail8.png" style="width:100%" onclick="currentSlide1(2)" alt="Practice before piano competition in Broumov, Czech Republic, part 1">
+              </div>
+              <div class="column1">
+                <img class="demo1 cursor" src="pics/thumbnail9.png" style="width:100%" onclick="currentSlide1(3)" alt="Practice before piano competition in Broumov, Czech Republic, part 2">
+              </div>
+            </div>
+          </div>
+          <script>
+            var slideIndex1 = 1;
+            showSlides1(slideIndex1);
+          </script>
+
+        <!-- END BLOG ENTRIES -->
+        
+      </div>
 
         <!-- END BLOG ENTRIES -->
       </div>
@@ -183,12 +253,13 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- About Card -->
         <div class="w3-margin">
           <div id="gallery">
-            <img src="sophi3.jpg">
-            <img src="sophi.JPG">
-            <img src="sophi5.jpg">
-            <img src="sophi4.jpg">
-            <img src="sophi6.jpg">
-            <img src="sophi2.jpg">
+            <img src="pics/sophi2.jpg">
+            <img src="pics/sophi3.jpg">
+            <img src="pics/sophi.JPG">
+            <img src="pics/sophi5.jpg">
+            <img src="pics/sophi11.jpg">
+            <img src="pics/sophi6.jpg">
+            <img src="pics/sophi7.jpg">
            </div>
         </div>
         <hr>
