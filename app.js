@@ -48,6 +48,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  $('.vids').each(function(){this.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*')});
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
@@ -59,10 +60,7 @@ function plusSlides1(n) {
 
 function currentSlide1(n) {
   showSlides1((slideIndex1 = n));
-  $('.vids')[0].contentWindow.postMessage('{"event":"command","func":"'+'stopVideo'+'","args":""}', '*');
 }
-
-
 
 function showSlides1(n) {
   let i;
@@ -81,6 +79,7 @@ function showSlides1(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
+  $('.vids1').each(function(){this.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*')});
   slides[slideIndex1 - 1].style.display = "block";
   dots[slideIndex1 - 1].className += " active";
   captionText.innerHTML = dots[slideIndex1 - 1].alt;
